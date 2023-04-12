@@ -44,8 +44,33 @@ class MARVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by MARParser#expression.
-    def visitExpression(self, ctx:MARParser.ExpressionContext):
+    # Visit a parse tree produced by MARParser#compareExpression.
+    def visitCompareExpression(self, ctx:MARParser.CompareExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#constantExpression.
+    def visitConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#addExpression.
+    def visitAddExpression(self, ctx:MARParser.AddExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#boolExpression.
+    def visitBoolExpression(self, ctx:MARParser.BoolExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#identifierExpression.
+    def visitIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#mulExpression.
+    def visitMulExpression(self, ctx:MARParser.MulExpressionContext):
         return self.visitChildren(ctx)
 
 

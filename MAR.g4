@@ -7,14 +7,14 @@ whileBlock: WHILE expression block;
 statement: (assignment | functionCall) SC;
 assignment: ID EQUALL expression;
 functionCall: ID OPP (expression (COMMA expression)*)? CLP;
-expression:
-    constant |
-    ID |
-    expression mulOp expression |       #mulExpression
-    expression addOp expression |
-    expression compareOp expression |
-    expression boolOp expression
-;
+expression
+    : constant                              #constantExpression
+    | ID                                    #identifierExpression
+    | expression mulOp expression           #mulExpression
+    | expression addOp expression           #addExpression
+    | expression compareOp expression       #compareExpression
+    | expression boolOp expression          #boolExpression
+    ;
 constant: INTEGER | FLOAT | STRING | BOOL | NULL;
 mulOp: MUL | DIV | MOD;
 addOp: ADD | SUB;

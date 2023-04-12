@@ -71,12 +71,57 @@ class MARListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by MARParser#expression.
-    def enterExpression(self, ctx:MARParser.ExpressionContext):
+    # Enter a parse tree produced by MARParser#compareExpression.
+    def enterCompareExpression(self, ctx:MARParser.CompareExpressionContext):
         pass
 
-    # Exit a parse tree produced by MARParser#expression.
-    def exitExpression(self, ctx:MARParser.ExpressionContext):
+    # Exit a parse tree produced by MARParser#compareExpression.
+    def exitCompareExpression(self, ctx:MARParser.CompareExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#constantExpression.
+    def enterConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#constantExpression.
+    def exitConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#addExpression.
+    def enterAddExpression(self, ctx:MARParser.AddExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#addExpression.
+    def exitAddExpression(self, ctx:MARParser.AddExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#boolExpression.
+    def enterBoolExpression(self, ctx:MARParser.BoolExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#boolExpression.
+    def exitBoolExpression(self, ctx:MARParser.BoolExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#identifierExpression.
+    def enterIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#identifierExpression.
+    def exitIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#mulExpression.
+    def enterMulExpression(self, ctx:MARParser.MulExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#mulExpression.
+    def exitMulExpression(self, ctx:MARParser.MulExpressionContext):
         pass
 
 

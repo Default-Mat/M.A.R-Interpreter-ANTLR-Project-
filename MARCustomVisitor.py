@@ -2,7 +2,6 @@ from Generated_files.MARVisitor import MARVisitor
 from Generated_files.MARParser import MARParser
 from antlr4 import *
 
-#test
 
 class MARCustomVisitor(MARVisitor):
     variables = {}
