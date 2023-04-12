@@ -80,6 +80,15 @@ class MARListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by MARParser#parenthesizedExpression.
+    def enterParenthesizedExpression(self, ctx:MARParser.ParenthesizedExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#parenthesizedExpression.
+    def exitParenthesizedExpression(self, ctx:MARParser.ParenthesizedExpressionContext):
+        pass
+
+
     # Enter a parse tree produced by MARParser#constantExpression.
     def enterConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
         pass
@@ -113,6 +122,24 @@ class MARListener(ParseTreeListener):
 
     # Exit a parse tree produced by MARParser#identifierExpression.
     def exitIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#functionCallExpression.
+    def enterFunctionCallExpression(self, ctx:MARParser.FunctionCallExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#functionCallExpression.
+    def exitFunctionCallExpression(self, ctx:MARParser.FunctionCallExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#notExpression.
+    def enterNotExpression(self, ctx:MARParser.NotExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#notExpression.
+    def exitNotExpression(self, ctx:MARParser.NotExpressionContext):
         pass
 
 

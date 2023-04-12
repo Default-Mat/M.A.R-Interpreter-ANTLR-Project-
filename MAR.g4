@@ -10,6 +10,9 @@ functionCall: ID OPP (expression (COMMA expression)*)? CLP;
 expression
     : constant                              #constantExpression
     | ID                                    #identifierExpression
+    | functionCall                          #functionCallExpression
+    | OPP expression CLP                    #parenthesizedExpression
+    | NOT expression                        #notExpression
     | expression mulOp expression           #mulExpression
     | expression addOp expression           #addExpression
     | expression compareOp expression       #compareExpression
@@ -37,6 +40,7 @@ FOR: 'for';
 WHILE: 'while';
 BOOL_OP: 'and' | 'or';
 ID: (LETTER)+(LETTER | DIGIT | '_')*;
+NOT: '!';
 OPP: '(';
 CLP: ')';
 COMMA: ',';
