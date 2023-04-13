@@ -41,7 +41,10 @@ class MARCustomVisitor(MARVisitor):
         rightExpt = self.visit(ctx.expression(1))
         op = ctx.addOp().getText()
         if op == '+':
-            self.__add(leftExp, rightExpt)
+            return self.__add(leftExp, rightExpt)
+
+        if op == '-':
+            return self.__subtract(leftExp, rightExpt)
 
     def __add(self, left, right):
         if type(left) is int and type(right) is int:
@@ -61,3 +64,19 @@ class MARCustomVisitor(MARVisitor):
 
         else:
             raise Exception(f'You cannot add {type(left)} and {type(right)} value types')
+
+    def __subtract(self, left, right):
+        if type(left) is int and type(right) is int:
+            return left - right
+
+        elif type(left) is float and type(right) is float:
+            return left - right
+
+        elif type(left) is float and type(right) is int:
+            return left - right
+
+        elif type(left) is int and type(right) is float:
+            return left - right
+
+        else:
+            raise Exception(f'You cannot subtract {type(left)} and {type(right)} value types')
