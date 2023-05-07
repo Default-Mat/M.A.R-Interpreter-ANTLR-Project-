@@ -197,8 +197,8 @@ class MARCustomVisitor(MARVisitor):
 
         
     def visitCompareOp(self, ctx: MARParser.AddExpressionContext):
-        leftExp = self.visit(ctx.exception(0))
-        rightExp = self.visit(ctx.exception(1))
+        leftExp = self.visit(ctx.expression(0))
+        rightExp = self.visit(ctx.expression(1))
         op = ctx.compareOp().getText()
 
         if op == '<':
