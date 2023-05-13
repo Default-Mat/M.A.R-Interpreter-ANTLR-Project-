@@ -11,6 +11,8 @@ class MARCustomVisitor(MARVisitor):
         value = self.visit(ctx.expression())
         self.variables[varName] = value
 
+        return None
+
     def visitConstant(self, ctx:MARParser.ConstantContext):
         if ctx.INTEGER() is not None:
             return int(ctx.INTEGER().getText())
@@ -22,7 +24,10 @@ class MARCustomVisitor(MARVisitor):
             return ctx.STRING().getText()
 
         if ctx.BOOL() is not None:
-            return bool(ctx.BOOL().getText())
+            if ctx.BOOL().getText() == "true":
+                return True
+            else:
+                return False
 
         if ctx.NULL() is not None:
             return None
@@ -196,7 +201,7 @@ class MARCustomVisitor(MARVisitor):
             raise Exception(f'can not in or')
 
         
-    def visitCompareOp(self, ctx: MARParser.AddExpressionContext):
+    def visitCompareExpression(self, ctx: MARParser.AddExpressionContext):
         leftExp = self.visit(ctx.expression(0))
         rightExp = self.visit(ctx.expression(1))
         op = ctx.compareOp().getText()

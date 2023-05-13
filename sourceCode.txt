@@ -1,2 +1,1 @@
-something = 34;
-something = something + 13;
+ali = 15 > 14;
