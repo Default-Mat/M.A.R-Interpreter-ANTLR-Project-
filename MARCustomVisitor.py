@@ -217,7 +217,7 @@ class MARCustomVisitor(MARVisitor):
         elif op == '==':
             return self.__Equals(leftExp, rightExp)
         elif op == '!=':
-            return self.__NotEquals(rightExp, rightExp)
+            return self.__NotEquals(leftExp, rightExp)
         else:
             raise Exception(f'Operation {op} not define')
 
