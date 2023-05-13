@@ -1,10 +1,14 @@
 grammar MAR;
 
 program: line+ EOF;
-line: statement | ifBlock | whileBlock;
-ifBlock: IF expression block (ELSE block)?;
+line: statement | ifBlock | whileBlock | marStatement;
+marStatement: MARS;
+ifBlock: IF expression block (elseIfBlock | elseBlock)?;
+elseIfBlock: ELSE IF expression block (elseIfBlock | elseBlock)?;
+elseBlock: ELSE block;
 whileBlock: WHILE expression block;
-statement: (assignment | functionCall) SC;
+statement: (assignment | functionCall | breakStatement | continueStatement) SC;
+
 assignment: ID EQUALL expression;
 functionCall: ID OPP (expression (COMMA expression)*)? CLP;
 expression
@@ -24,7 +28,8 @@ addOp: ADD | SUB;
 compareOp: RELOP;
 boolOp: BOOL_OP;
 block: OPCB line* CLCB;
-
+breakStatement: BREAK;
+continueStatement: CONTINUE;
 fragment DIGIT: [0-9];
 fragment LETTER: [A-Za-z];
 
@@ -54,3 +59,6 @@ DIV: '/';
 MOD: '%';
 RELOP: '<' | '>' | '<=' | '>=' | '==' | '!=' ;
 SC: ';';
+BREAK: 'break';
+CONTINUE: 'continue';
+MARS: 'mar';
