@@ -1,10 +1,36 @@
 from Generated_files.MARVisitor import MARVisitor
 from Generated_files.MARParser import MARParser
 from antlr4 import *
+import my_function
 
 
 class MARCustomVisitor(MARVisitor):
     variables = {}
+    def __init__(self):
+        self.variables["pi"] = 3.14
+        self.variables["amirreza"] = 0
+
+    # def __begoo(self, args):
+    #     for arg in args:
+    #         print(arg)
+
+    def visitFunctionCall(self, ctx:MARParser.FunctionCallExpressionContext):
+        identify = ctx.ID().getText()
+        argument = []
+        if ctx.expression():
+            argument = [self.visit(expr) for expr in ctx.expression()]
+
+        function = getattr(my_function, identify)
+        function(*argument)
+
+    def visitFunctionCallExpression(self, ctx:MARParser.FunctionCallExpressionContext):
+        identify = ctx.functionCall().ID().getText()
+        argument = []
+        if ctx.functionCall().expression():
+            argument = [self.visit(expr) for expr in ctx.functionCall().expression()]
+
+        function = getattr(my_function, identify)
+        return function(*argument)
 
     def visitAssignment(self, ctx:MARParser.AssignmentContext):
         varName = ctx.ID().getText()

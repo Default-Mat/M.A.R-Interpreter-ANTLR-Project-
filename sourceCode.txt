@@ -1,1 +1,2 @@
-ali = 16 != 16;
+res = zarb(2, 3);
+begoo("amir" + "1");
