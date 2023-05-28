@@ -2,7 +2,6 @@ grammar MAR;
 
 program: line+ EOF;
 line: statement | ifBlock | whileBlock | marStatement;
-marStatement: MARS;
 ifBlock: IF expression block (elseIfBlock | elseBlock)?;
 elseIfBlock: ELSE IF expression block (elseIfBlock | elseBlock)?;
 elseBlock: ELSE block;
@@ -61,4 +60,3 @@ RELOP: '<' | '>' | '<=' | '>=' | '==' | '!=' ;
 SC: ';';
 BREAK: 'break';
 CONTINUE: 'continue';
-MARS: 'mar';
