@@ -1,2 +1,2 @@
-something = 34;
-something = something + 13;
+i = 2 ^ 1 ^ 2;
+show(i);

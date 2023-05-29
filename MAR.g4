@@ -1,12 +1,12 @@
 grammar MAR;
 
 program: line+ EOF;
-line: statement | ifBlock | whileBlock | marStatement;
+line: statement | ifBlock | whileBlock;
 ifBlock: IF expression block (elseIfBlock | elseBlock)?;
 elseIfBlock: ELSE IF expression block (elseIfBlock | elseBlock)?;
 elseBlock: ELSE block;
 whileBlock: WHILE expression block;
-statement: (assignment | functionCall | breakStatement | continueStatement) SC;
+statement: (assignment | functionCall) SC;
 
 assignment: ID EQUALL expression;
 functionCall: ID OPP (expression (COMMA expression)*)? CLP;
@@ -16,19 +16,19 @@ expression
     | functionCall                          #functionCallExpression
     | OPP expression CLP                    #parenthesizedExpression
     | NOT expression                        #notExpression
+    | expression powerOp expression         #powerExpression
     | expression mulOp expression           #mulExpression
     | expression addOp expression           #addExpression
     | expression compareOp expression       #compareExpression
     | expression boolOp expression          #boolExpression
     ;
 constant: INTEGER | FLOAT | STRING | BOOL | NULL;
+powerOp: POW;
 mulOp: MUL | DIV | MOD;
 addOp: ADD | SUB;
 compareOp: RELOP;
 boolOp: BOOL_OP;
 block: OPCB line* CLCB;
-breakStatement: BREAK;
-continueStatement: CONTINUE;
 fragment DIGIT: [0-9];
 fragment LETTER: [A-Za-z];
 
@@ -55,8 +55,7 @@ ADD: '+';
 SUB: '-';
 MUL: '*';
 DIV: '/';
+POW: '^';
 MOD: '%';
 RELOP: '<' | '>' | '<=' | '>=' | '==' | '!=' ;
 SC: ';';
-BREAK: 'break';
-CONTINUE: 'continue';

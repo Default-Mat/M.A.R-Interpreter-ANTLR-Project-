@@ -24,6 +24,16 @@ class MARVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by MARParser#elseIfBlock.
+    def visitElseIfBlock(self, ctx:MARParser.ElseIfBlockContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#elseBlock.
+    def visitElseBlock(self, ctx:MARParser.ElseBlockContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by MARParser#whileBlock.
     def visitWhileBlock(self, ctx:MARParser.WhileBlockContext):
         return self.visitChildren(ctx)
@@ -46,6 +56,11 @@ class MARVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by MARParser#compareExpression.
     def visitCompareExpression(self, ctx:MARParser.CompareExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#powerExpression.
+    def visitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
         return self.visitChildren(ctx)
 
 
@@ -91,6 +106,11 @@ class MARVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by MARParser#constant.
     def visitConstant(self, ctx:MARParser.ConstantContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#powerOp.
+    def visitPowerOp(self, ctx:MARParser.PowerOpContext):
         return self.visitChildren(ctx)
 
 

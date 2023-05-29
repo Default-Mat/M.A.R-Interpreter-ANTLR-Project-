@@ -1,3 +1,4 @@
+import preset_functions
 from Generated_files.MARVisitor import MARVisitor
 from Generated_files.MARParser import MARParser
 from antlr4 import *
@@ -13,14 +14,13 @@ class MARCustomVisitor(MARVisitor):
         self.variables["pi"] = 3.14
         self.variables["amirreza"] = 0
 
-
-    def visitFunctionCall(self, ctx: MARParser.FunctionCallExpressionContext):git pu
+    def visitFunctionCall(self, ctx: MARParser.FunctionCallExpressionContext):
         identify = ctx.ID().getText()
         argument = []
         if ctx.expression():
             argument = [self.visit(expr) for expr in ctx.expression()]
 
-        function = getattr(my_function, identify)
+        function = getattr(preset_functions, identify)
         function(*argument)
 
     def visitFunctionCallExpression(self, ctx: MARParser.FunctionCallExpressionContext):
@@ -36,7 +36,6 @@ class MARCustomVisitor(MARVisitor):
         varName = ctx.ID().getText()
         value = self.visit(ctx.expression())
         self.variables[varName] = value
-        print("test")
         return None
 
     def visitConstant(self, ctx: MARParser.ConstantContext):
@@ -179,6 +178,30 @@ class MARCustomVisitor(MARVisitor):
 
         else:
             raise Exception(f'You cannot modify {type(left)} and {type(right)} value types')
+
+    def visitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
+        leftExp = self.visit(ctx.expression(0))
+        rightExp = self.visit(ctx.expression(1))
+        op = ctx.powerOp().getText()
+
+        if op == '^':
+            return self.__pow(leftExp, rightExp)
+
+    def __pow(self, left, right):
+        if type(left) is int and type(right) is int:
+            return left ** right
+
+        elif type(left) is float and type(right) is int:
+            return left ** right
+
+        elif type(left) is float and type(right) is float:
+            return left ** right
+
+        elif type(left) is int and type(right) is float:
+            return left ** right
+
+        else:
+            raise Exception(f'You cannot use power op on {type(left)} and {type(right)} value types')
 
     def visitBoolExpression(self, ctx: MARParser.AddExpressionContext):
         leftExp = self.visit(ctx.expression(0))

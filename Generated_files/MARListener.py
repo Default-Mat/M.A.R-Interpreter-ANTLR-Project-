@@ -35,6 +35,24 @@ class MARListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by MARParser#elseIfBlock.
+    def enterElseIfBlock(self, ctx:MARParser.ElseIfBlockContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#elseIfBlock.
+    def exitElseIfBlock(self, ctx:MARParser.ElseIfBlockContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#elseBlock.
+    def enterElseBlock(self, ctx:MARParser.ElseBlockContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#elseBlock.
+    def exitElseBlock(self, ctx:MARParser.ElseBlockContext):
+        pass
+
+
     # Enter a parse tree produced by MARParser#whileBlock.
     def enterWhileBlock(self, ctx:MARParser.WhileBlockContext):
         pass
@@ -77,6 +95,15 @@ class MARListener(ParseTreeListener):
 
     # Exit a parse tree produced by MARParser#compareExpression.
     def exitCompareExpression(self, ctx:MARParser.CompareExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#powerExpression.
+    def enterPowerExpression(self, ctx:MARParser.PowerExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#powerExpression.
+    def exitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
         pass
 
 
@@ -158,6 +185,15 @@ class MARListener(ParseTreeListener):
 
     # Exit a parse tree produced by MARParser#constant.
     def exitConstant(self, ctx:MARParser.ConstantContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#powerOp.
+    def enterPowerOp(self, ctx:MARParser.PowerOpContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#powerOp.
+    def exitPowerOp(self, ctx:MARParser.PowerOpContext):
         pass
 
 
