@@ -29,7 +29,7 @@ class MARCustomVisitor(MARVisitor):
         if ctx.functionCall().expression():
             argument = [self.visit(expr) for expr in ctx.functionCall().expression()]
 
-        function = getattr(my_function, identify)
+        function = getattr(preset_functions, identify)
         return function(*argument)
 
     def visitAssignment(self, ctx: MARParser.AssignmentContext):
@@ -182,10 +182,7 @@ class MARCustomVisitor(MARVisitor):
     def visitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
         leftExp = self.visit(ctx.expression(0))
         rightExp = self.visit(ctx.expression(1))
-        op = ctx.powerOp().getText()
-
-        if op == '^':
-            return self.__pow(leftExp, rightExp)
+        return self.__pow(leftExp, rightExp)
 
     def __pow(self, left, right):
         if type(left) is int and type(right) is int:
