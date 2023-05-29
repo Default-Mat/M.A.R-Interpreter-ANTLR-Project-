@@ -98,30 +98,12 @@ class MARListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by MARParser#powerExpression.
-    def enterPowerExpression(self, ctx:MARParser.PowerExpressionContext):
+    # Enter a parse tree produced by MARParser#boolExpression.
+    def enterBoolExpression(self, ctx:MARParser.BoolExpressionContext):
         pass
 
-    # Exit a parse tree produced by MARParser#powerExpression.
-    def exitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
-        pass
-
-
-    # Enter a parse tree produced by MARParser#parenthesizedExpression.
-    def enterParenthesizedExpression(self, ctx:MARParser.ParenthesizedExpressionContext):
-        pass
-
-    # Exit a parse tree produced by MARParser#parenthesizedExpression.
-    def exitParenthesizedExpression(self, ctx:MARParser.ParenthesizedExpressionContext):
-        pass
-
-
-    # Enter a parse tree produced by MARParser#constantExpression.
-    def enterConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
-        pass
-
-    # Exit a parse tree produced by MARParser#constantExpression.
-    def exitConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+    # Exit a parse tree produced by MARParser#boolExpression.
+    def exitBoolExpression(self, ctx:MARParser.BoolExpressionContext):
         pass
 
 
@@ -134,30 +116,84 @@ class MARListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by MARParser#boolExpression.
-    def enterBoolExpression(self, ctx:MARParser.BoolExpressionContext):
-        pass
-
-    # Exit a parse tree produced by MARParser#boolExpression.
-    def exitBoolExpression(self, ctx:MARParser.BoolExpressionContext):
-        pass
-
-
-    # Enter a parse tree produced by MARParser#identifierExpression.
-    def enterIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
-        pass
-
-    # Exit a parse tree produced by MARParser#identifierExpression.
-    def exitIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
-        pass
-
-
     # Enter a parse tree produced by MARParser#functionCallExpression.
     def enterFunctionCallExpression(self, ctx:MARParser.FunctionCallExpressionContext):
         pass
 
     # Exit a parse tree produced by MARParser#functionCallExpression.
     def exitFunctionCallExpression(self, ctx:MARParser.FunctionCallExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#termExpression.
+    def enterTermExpression(self, ctx:MARParser.TermExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#termExpression.
+    def exitTermExpression(self, ctx:MARParser.TermExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#subExpression.
+    def enterSubExpression(self, ctx:MARParser.SubExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#subExpression.
+    def exitSubExpression(self, ctx:MARParser.SubExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#powerTerm.
+    def enterPowerTerm(self, ctx:MARParser.PowerTermContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#powerTerm.
+    def exitPowerTerm(self, ctx:MARParser.PowerTermContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#modExpression.
+    def enterModExpression(self, ctx:MARParser.ModExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#modExpression.
+    def exitModExpression(self, ctx:MARParser.ModExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#divExpression.
+    def enterDivExpression(self, ctx:MARParser.DivExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#divExpression.
+    def exitDivExpression(self, ctx:MARParser.DivExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#mulExpression.
+    def enterMulExpression(self, ctx:MARParser.MulExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#mulExpression.
+    def exitMulExpression(self, ctx:MARParser.MulExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#powerExpression.
+    def enterPowerExpression(self, ctx:MARParser.PowerExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#powerExpression.
+    def exitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#notPower.
+    def enterNotPower(self, ctx:MARParser.NotPowerContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#notPower.
+    def exitNotPower(self, ctx:MARParser.NotPowerContext):
         pass
 
 
@@ -170,12 +206,39 @@ class MARListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by MARParser#mulExpression.
-    def enterMulExpression(self, ctx:MARParser.MulExpressionContext):
+    # Enter a parse tree produced by MARParser#factorNot.
+    def enterFactorNot(self, ctx:MARParser.FactorNotContext):
         pass
 
-    # Exit a parse tree produced by MARParser#mulExpression.
-    def exitMulExpression(self, ctx:MARParser.MulExpressionContext):
+    # Exit a parse tree produced by MARParser#factorNot.
+    def exitFactorNot(self, ctx:MARParser.FactorNotContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#paranthesesExpression.
+    def enterParanthesesExpression(self, ctx:MARParser.ParanthesesExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#paranthesesExpression.
+    def exitParanthesesExpression(self, ctx:MARParser.ParanthesesExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#constantExpression.
+    def enterConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#constantExpression.
+    def exitConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by MARParser#identifierExpression.
+    def enterIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
+        pass
+
+    # Exit a parse tree produced by MARParser#identifierExpression.
+    def exitIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
         pass
 
 

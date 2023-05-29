@@ -59,18 +59,8 @@ class MARVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by MARParser#powerExpression.
-    def visitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by MARParser#parenthesizedExpression.
-    def visitParenthesizedExpression(self, ctx:MARParser.ParenthesizedExpressionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by MARParser#constantExpression.
-    def visitConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+    # Visit a parse tree produced by MARParser#boolExpression.
+    def visitBoolExpression(self, ctx:MARParser.BoolExpressionContext):
         return self.visitChildren(ctx)
 
 
@@ -79,18 +69,48 @@ class MARVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by MARParser#boolExpression.
-    def visitBoolExpression(self, ctx:MARParser.BoolExpressionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by MARParser#identifierExpression.
-    def visitIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by MARParser#functionCallExpression.
     def visitFunctionCallExpression(self, ctx:MARParser.FunctionCallExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#termExpression.
+    def visitTermExpression(self, ctx:MARParser.TermExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#subExpression.
+    def visitSubExpression(self, ctx:MARParser.SubExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#powerTerm.
+    def visitPowerTerm(self, ctx:MARParser.PowerTermContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#modExpression.
+    def visitModExpression(self, ctx:MARParser.ModExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#divExpression.
+    def visitDivExpression(self, ctx:MARParser.DivExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#mulExpression.
+    def visitMulExpression(self, ctx:MARParser.MulExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#powerExpression.
+    def visitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#notPower.
+    def visitNotPower(self, ctx:MARParser.NotPowerContext):
         return self.visitChildren(ctx)
 
 
@@ -99,8 +119,23 @@ class MARVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by MARParser#mulExpression.
-    def visitMulExpression(self, ctx:MARParser.MulExpressionContext):
+    # Visit a parse tree produced by MARParser#factorNot.
+    def visitFactorNot(self, ctx:MARParser.FactorNotContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#paranthesesExpression.
+    def visitParanthesesExpression(self, ctx:MARParser.ParanthesesExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#constantExpression.
+    def visitConstantExpression(self, ctx:MARParser.ConstantExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by MARParser#identifierExpression.
+    def visitIdentifierExpression(self, ctx:MARParser.IdentifierExpressionContext):
         return self.visitChildren(ctx)
 
 

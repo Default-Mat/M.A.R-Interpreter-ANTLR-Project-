@@ -11,16 +11,35 @@ statement: (assignment | functionCall) SC;
 assignment: ID EQUALL expression;
 functionCall: ID OPP (expression (COMMA expression)*)? CLP;
 expression
-    : constant                              #constantExpression
-    | ID                                    #identifierExpression
-    | functionCall                          #functionCallExpression
-    | OPP expression CLP                    #parenthesizedExpression
-    | NOT expression                        #notExpression
-    | expression powerOp expression         #powerExpression
-    | expression mulOp expression           #mulExpression
-    | expression addOp expression           #addExpression
+    : functionCall              #functionCallExpression
+    | expression ADD term       #addExpression
+    | expression SUB term       #subExpression
+    | term                      #termExpression
     | expression compareOp expression       #compareExpression
     | expression boolOp expression          #boolExpression
+    ;
+
+term
+    : term MUL factor           #mulExpression
+    | term DIV factor           #divExpression
+    | term MOD factor           #modExpression
+    | power                     #powerTerm
+    ;
+
+power
+    : not POW power          #powerExpression
+    | not                    #notPower
+    ;
+
+not
+    : NOT not               #notExpression
+    | factor                #factorNot
+    ;
+
+factor
+    : OPP expression CLP        #paranthesesExpression
+    | constant                  #constantExpression
+    | ID                        #identifierExpression
     ;
 constant: INTEGER | FLOAT | STRING | BOOL | NULL;
 powerOp: POW;

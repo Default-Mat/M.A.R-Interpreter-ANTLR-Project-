@@ -67,14 +67,14 @@ class MARCustomVisitor(MARVisitor):
         return self.variables[varName]
 
     def visitAddExpression(self, ctx: MARParser.AddExpressionContext):
-        leftExp = self.visit(ctx.expression(0))
-        rightExpt = self.visit(ctx.expression(1))
-        op = ctx.addOp().getText()
-        if op == '+':
-            return self.__add(leftExp, rightExpt)
+        leftExp = self.visit(ctx.expression())
+        rightExpt = self.visit(ctx.term())
+        return self.__add(leftExp, rightExpt)
 
-        if op == '-':
-            return self.__subtract(leftExp, rightExpt)
+    def visitSubExpression(self, ctx:MARParser.SubExpressionContext):
+        leftExp = self.visit(ctx.expression())
+        rightExpt = self.visit(ctx.term())
+        return self.__subtract(leftExp, rightExpt)
 
     def __add(self, left, right):
         if type(left) is int and type(right) is int:
@@ -111,19 +111,20 @@ class MARCustomVisitor(MARVisitor):
         else:
             raise Exception(f'You cannot subtract {type(left)} and {type(right)} value types')
 
-    def visitMulExpression(self, ctx: MARParser.AddExpressionContext):
-        leftExp = self.visit(ctx.expression(0))
-        rightExp = self.visit(ctx.expression(1))
-        op = ctx.mulOp().getText()
+    def visitMulExpression(self, ctx:MARParser.MulExpressionContext):
+        leftExp = self.visit(ctx.term())
+        rightExp = self.visit(ctx.factor())
+        return self.__multy(leftExp, rightExp)
 
-        if op == '*':
-            return self.__multy(leftExp, rightExp)
-        elif op == '/':
-            return self.__divied(leftExp, rightExp)
-        elif op == '%':
-            return self.__modify(leftExp, rightExp)
-        else:
-            raise Exception(f'Operation {op} not define')
+    def visitDivExpression(self, ctx:MARParser.DivExpressionContext):
+        leftExp = self.visit(ctx.term())
+        rightExp = self.visit(ctx.factor())
+        return self.__divied(leftExp, rightExp)
+
+    def visitModExpression(self, ctx:MARParser.ModExpressionContext):
+        leftExp = self.visit(ctx.term())
+        rightExp = self.visit(ctx.factor())
+        return self.__modify(leftExp, rightExp)
 
     def __multy(self, left, right):
         if type(left) is int and type(right) is int:
@@ -180,8 +181,8 @@ class MARCustomVisitor(MARVisitor):
             raise Exception(f'You cannot modify {type(left)} and {type(right)} value types')
 
     def visitPowerExpression(self, ctx:MARParser.PowerExpressionContext):
-        leftExp = self.visit(ctx.expression(0))
-        rightExp = self.visit(ctx.expression(1))
+        leftExp = self.visit(ctx.not_())
+        rightExp = self.visit(ctx.power())
         return self.__pow(leftExp, rightExp)
 
     def __pow(self, left, right):
@@ -199,6 +200,9 @@ class MARCustomVisitor(MARVisitor):
 
         else:
             raise Exception(f'You cannot use power op on {type(left)} and {type(right)} value types')
+
+    def visitParanthesesExpression(self, ctx:MARParser.ParanthesesExpressionContext):
+        return self.visit(ctx.expression())
 
     def visitBoolExpression(self, ctx: MARParser.AddExpressionContext):
         leftExp = self.visit(ctx.expression(0))
