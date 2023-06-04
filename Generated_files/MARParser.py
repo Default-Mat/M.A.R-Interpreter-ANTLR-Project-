@@ -10,67 +10,66 @@ else:
 
 def serializedATN():
     return [
-        4,1,27,183,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,27,182,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,1,0,4,0,44,8,0,11,0,12,0,45,1,0,1,0,1,1,1,1,1,1,3,1,53,8,1,
         1,2,1,2,1,2,1,2,1,2,3,2,60,8,2,1,3,1,3,1,3,1,3,1,3,1,3,3,3,68,8,
         3,1,4,1,4,1,4,1,5,1,5,1,5,1,5,1,6,1,6,3,6,79,8,6,1,6,1,6,1,7,1,7,
         1,7,1,7,1,8,1,8,1,8,1,8,1,8,5,8,92,8,8,10,8,12,8,95,9,8,3,8,97,8,
-        8,1,8,1,8,1,9,1,9,1,9,3,9,104,8,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,
-        9,1,9,1,9,1,9,1,9,1,9,1,9,5,9,120,8,9,10,9,12,9,123,9,9,1,10,1,10,
-        1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,5,10,137,8,10,
-        10,10,12,10,140,9,10,1,11,1,11,1,11,1,11,1,11,3,11,147,8,11,1,12,
-        1,12,1,12,3,12,152,8,12,1,13,1,13,1,13,1,13,1,13,1,13,3,13,160,8,
-        13,1,14,1,14,1,15,1,15,1,16,1,16,1,17,1,17,1,18,1,18,1,19,1,19,1,
-        20,1,20,5,20,176,8,20,10,20,12,20,179,9,20,1,20,1,20,1,20,0,2,18,
-        20,21,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,
-        0,3,1,0,2,6,2,0,22,23,25,25,1,0,20,21,184,0,43,1,0,0,0,2,52,1,0,
-        0,0,4,54,1,0,0,0,6,61,1,0,0,0,8,69,1,0,0,0,10,72,1,0,0,0,12,78,1,
-        0,0,0,14,82,1,0,0,0,16,86,1,0,0,0,18,103,1,0,0,0,20,124,1,0,0,0,
-        22,146,1,0,0,0,24,151,1,0,0,0,26,159,1,0,0,0,28,161,1,0,0,0,30,163,
-        1,0,0,0,32,165,1,0,0,0,34,167,1,0,0,0,36,169,1,0,0,0,38,171,1,0,
-        0,0,40,173,1,0,0,0,42,44,3,2,1,0,43,42,1,0,0,0,44,45,1,0,0,0,45,
-        43,1,0,0,0,45,46,1,0,0,0,46,47,1,0,0,0,47,48,5,0,0,1,48,1,1,0,0,
-        0,49,53,3,12,6,0,50,53,3,4,2,0,51,53,3,10,5,0,52,49,1,0,0,0,52,50,
-        1,0,0,0,52,51,1,0,0,0,53,3,1,0,0,0,54,55,5,7,0,0,55,56,3,18,9,0,
-        56,59,3,40,20,0,57,60,3,6,3,0,58,60,3,8,4,0,59,57,1,0,0,0,59,58,
-        1,0,0,0,59,60,1,0,0,0,60,5,1,0,0,0,61,62,5,8,0,0,62,63,5,7,0,0,63,
-        64,3,18,9,0,64,67,3,40,20,0,65,68,3,6,3,0,66,68,3,8,4,0,67,65,1,
-        0,0,0,67,66,1,0,0,0,67,68,1,0,0,0,68,7,1,0,0,0,69,70,5,8,0,0,70,
-        71,3,40,20,0,71,9,1,0,0,0,72,73,5,10,0,0,73,74,3,18,9,0,74,75,3,
-        40,20,0,75,11,1,0,0,0,76,79,3,14,7,0,77,79,3,16,8,0,78,76,1,0,0,
-        0,78,77,1,0,0,0,79,80,1,0,0,0,80,81,5,27,0,0,81,13,1,0,0,0,82,83,
-        5,12,0,0,83,84,5,17,0,0,84,85,3,18,9,0,85,15,1,0,0,0,86,87,5,12,
-        0,0,87,96,5,14,0,0,88,93,3,18,9,0,89,90,5,16,0,0,90,92,3,18,9,0,
-        91,89,1,0,0,0,92,95,1,0,0,0,93,91,1,0,0,0,93,94,1,0,0,0,94,97,1,
-        0,0,0,95,93,1,0,0,0,96,88,1,0,0,0,96,97,1,0,0,0,97,98,1,0,0,0,98,
-        99,5,15,0,0,99,17,1,0,0,0,100,101,6,9,-1,0,101,104,3,16,8,0,102,
-        104,3,20,10,0,103,100,1,0,0,0,103,102,1,0,0,0,104,121,1,0,0,0,105,
-        106,10,2,0,0,106,107,3,36,18,0,107,108,3,18,9,3,108,120,1,0,0,0,
-        109,110,10,1,0,0,110,111,3,38,19,0,111,112,3,18,9,2,112,120,1,0,
-        0,0,113,114,10,5,0,0,114,115,5,20,0,0,115,120,3,20,10,0,116,117,
-        10,4,0,0,117,118,5,21,0,0,118,120,3,20,10,0,119,105,1,0,0,0,119,
-        109,1,0,0,0,119,113,1,0,0,0,119,116,1,0,0,0,120,123,1,0,0,0,121,
-        119,1,0,0,0,121,122,1,0,0,0,122,19,1,0,0,0,123,121,1,0,0,0,124,125,
-        6,10,-1,0,125,126,3,22,11,0,126,138,1,0,0,0,127,128,10,4,0,0,128,
-        129,5,22,0,0,129,137,3,26,13,0,130,131,10,3,0,0,131,132,5,23,0,0,
-        132,137,3,26,13,0,133,134,10,2,0,0,134,135,5,25,0,0,135,137,3,26,
-        13,0,136,127,1,0,0,0,136,130,1,0,0,0,136,133,1,0,0,0,137,140,1,0,
-        0,0,138,136,1,0,0,0,138,139,1,0,0,0,139,21,1,0,0,0,140,138,1,0,0,
-        0,141,142,3,24,12,0,142,143,5,24,0,0,143,144,3,22,11,0,144,147,1,
-        0,0,0,145,147,3,24,12,0,146,141,1,0,0,0,146,145,1,0,0,0,147,23,1,
-        0,0,0,148,149,5,13,0,0,149,152,3,24,12,0,150,152,3,26,13,0,151,148,
-        1,0,0,0,151,150,1,0,0,0,152,25,1,0,0,0,153,154,5,14,0,0,154,155,
-        3,18,9,0,155,156,5,15,0,0,156,160,1,0,0,0,157,160,3,28,14,0,158,
-        160,5,12,0,0,159,153,1,0,0,0,159,157,1,0,0,0,159,158,1,0,0,0,160,
-        27,1,0,0,0,161,162,7,0,0,0,162,29,1,0,0,0,163,164,5,24,0,0,164,31,
-        1,0,0,0,165,166,7,1,0,0,166,33,1,0,0,0,167,168,7,2,0,0,168,35,1,
-        0,0,0,169,170,5,26,0,0,170,37,1,0,0,0,171,172,5,11,0,0,172,39,1,
-        0,0,0,173,177,5,18,0,0,174,176,3,2,1,0,175,174,1,0,0,0,176,179,1,
-        0,0,0,177,175,1,0,0,0,177,178,1,0,0,0,178,180,1,0,0,0,179,177,1,
-        0,0,0,180,181,5,19,0,0,181,41,1,0,0,0,16,45,52,59,67,78,93,96,103,
-        119,121,136,138,146,151,159,177
+        8,1,8,1,8,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,
+        9,1,9,1,9,1,9,5,9,118,8,9,10,9,12,9,121,9,9,1,10,1,10,1,10,1,10,
+        1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,5,10,135,8,10,10,10,12,10,
+        138,9,10,1,11,1,11,1,11,1,11,1,11,3,11,145,8,11,1,12,1,12,1,12,3,
+        12,150,8,12,1,13,1,13,1,13,1,13,1,13,1,13,1,13,3,13,159,8,13,1,14,
+        1,14,1,15,1,15,1,16,1,16,1,17,1,17,1,18,1,18,1,19,1,19,1,20,1,20,
+        5,20,175,8,20,10,20,12,20,178,9,20,1,20,1,20,1,20,0,2,18,20,21,0,
+        2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,0,3,1,0,
+        2,6,2,0,22,23,25,25,1,0,20,21,183,0,43,1,0,0,0,2,52,1,0,0,0,4,54,
+        1,0,0,0,6,61,1,0,0,0,8,69,1,0,0,0,10,72,1,0,0,0,12,78,1,0,0,0,14,
+        82,1,0,0,0,16,86,1,0,0,0,18,100,1,0,0,0,20,122,1,0,0,0,22,144,1,
+        0,0,0,24,149,1,0,0,0,26,158,1,0,0,0,28,160,1,0,0,0,30,162,1,0,0,
+        0,32,164,1,0,0,0,34,166,1,0,0,0,36,168,1,0,0,0,38,170,1,0,0,0,40,
+        172,1,0,0,0,42,44,3,2,1,0,43,42,1,0,0,0,44,45,1,0,0,0,45,43,1,0,
+        0,0,45,46,1,0,0,0,46,47,1,0,0,0,47,48,5,0,0,1,48,1,1,0,0,0,49,53,
+        3,12,6,0,50,53,3,4,2,0,51,53,3,10,5,0,52,49,1,0,0,0,52,50,1,0,0,
+        0,52,51,1,0,0,0,53,3,1,0,0,0,54,55,5,7,0,0,55,56,3,18,9,0,56,59,
+        3,40,20,0,57,60,3,6,3,0,58,60,3,8,4,0,59,57,1,0,0,0,59,58,1,0,0,
+        0,59,60,1,0,0,0,60,5,1,0,0,0,61,62,5,8,0,0,62,63,5,7,0,0,63,64,3,
+        18,9,0,64,67,3,40,20,0,65,68,3,6,3,0,66,68,3,8,4,0,67,65,1,0,0,0,
+        67,66,1,0,0,0,67,68,1,0,0,0,68,7,1,0,0,0,69,70,5,8,0,0,70,71,3,40,
+        20,0,71,9,1,0,0,0,72,73,5,10,0,0,73,74,3,18,9,0,74,75,3,40,20,0,
+        75,11,1,0,0,0,76,79,3,14,7,0,77,79,3,16,8,0,78,76,1,0,0,0,78,77,
+        1,0,0,0,79,80,1,0,0,0,80,81,5,27,0,0,81,13,1,0,0,0,82,83,5,12,0,
+        0,83,84,5,17,0,0,84,85,3,18,9,0,85,15,1,0,0,0,86,87,5,12,0,0,87,
+        96,5,14,0,0,88,93,3,18,9,0,89,90,5,16,0,0,90,92,3,18,9,0,91,89,1,
+        0,0,0,92,95,1,0,0,0,93,91,1,0,0,0,93,94,1,0,0,0,94,97,1,0,0,0,95,
+        93,1,0,0,0,96,88,1,0,0,0,96,97,1,0,0,0,97,98,1,0,0,0,98,99,5,15,
+        0,0,99,17,1,0,0,0,100,101,6,9,-1,0,101,102,3,20,10,0,102,119,1,0,
+        0,0,103,104,10,2,0,0,104,105,3,36,18,0,105,106,3,18,9,3,106,118,
+        1,0,0,0,107,108,10,1,0,0,108,109,3,38,19,0,109,110,3,18,9,2,110,
+        118,1,0,0,0,111,112,10,5,0,0,112,113,5,20,0,0,113,118,3,20,10,0,
+        114,115,10,4,0,0,115,116,5,21,0,0,116,118,3,20,10,0,117,103,1,0,
+        0,0,117,107,1,0,0,0,117,111,1,0,0,0,117,114,1,0,0,0,118,121,1,0,
+        0,0,119,117,1,0,0,0,119,120,1,0,0,0,120,19,1,0,0,0,121,119,1,0,0,
+        0,122,123,6,10,-1,0,123,124,3,22,11,0,124,136,1,0,0,0,125,126,10,
+        4,0,0,126,127,5,22,0,0,127,135,3,22,11,0,128,129,10,3,0,0,129,130,
+        5,23,0,0,130,135,3,22,11,0,131,132,10,2,0,0,132,133,5,25,0,0,133,
+        135,3,22,11,0,134,125,1,0,0,0,134,128,1,0,0,0,134,131,1,0,0,0,135,
+        138,1,0,0,0,136,134,1,0,0,0,136,137,1,0,0,0,137,21,1,0,0,0,138,136,
+        1,0,0,0,139,140,3,24,12,0,140,141,5,24,0,0,141,142,3,22,11,0,142,
+        145,1,0,0,0,143,145,3,24,12,0,144,139,1,0,0,0,144,143,1,0,0,0,145,
+        23,1,0,0,0,146,147,5,13,0,0,147,150,3,24,12,0,148,150,3,26,13,0,
+        149,146,1,0,0,0,149,148,1,0,0,0,150,25,1,0,0,0,151,152,5,14,0,0,
+        152,153,3,18,9,0,153,154,5,15,0,0,154,159,1,0,0,0,155,159,5,12,0,
+        0,156,159,3,28,14,0,157,159,3,16,8,0,158,151,1,0,0,0,158,155,1,0,
+        0,0,158,156,1,0,0,0,158,157,1,0,0,0,159,27,1,0,0,0,160,161,7,0,0,
+        0,161,29,1,0,0,0,162,163,5,24,0,0,163,31,1,0,0,0,164,165,7,1,0,0,
+        165,33,1,0,0,0,166,167,7,2,0,0,167,35,1,0,0,0,168,169,5,26,0,0,169,
+        37,1,0,0,0,170,171,5,11,0,0,171,39,1,0,0,0,172,176,5,18,0,0,173,
+        175,3,2,1,0,174,173,1,0,0,0,175,178,1,0,0,0,176,174,1,0,0,0,176,
+        177,1,0,0,0,177,179,1,0,0,0,178,176,1,0,0,0,179,180,5,19,0,0,180,
+        41,1,0,0,0,15,45,52,59,67,78,93,96,117,119,134,136,144,149,158,176
     ]
 
 class MARParser ( Parser ):
@@ -902,31 +901,6 @@ class MARParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
-    class FunctionCallExpressionContext(ExpressionContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a MARParser.ExpressionContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def functionCall(self):
-            return self.getTypedRuleContext(MARParser.FunctionCallContext,0)
-
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFunctionCallExpression" ):
-                listener.enterFunctionCallExpression(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFunctionCallExpression" ):
-                listener.exitFunctionCallExpression(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFunctionCallExpression" ):
-                return visitor.visitFunctionCallExpression(self)
-            else:
-                return visitor.visitChildren(self)
-
-
     class TermExpressionContext(ExpressionContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a MARParser.ExpressionContext
@@ -992,95 +966,80 @@ class MARParser ( Parser ):
         self.enterRecursionRule(localctx, 18, self.RULE_expression, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 103
-            self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
-            if la_ == 1:
-                localctx = MARParser.FunctionCallExpressionContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
+            localctx = MARParser.TermExpressionContext(self, localctx)
+            self._ctx = localctx
+            _prevctx = localctx
 
-                self.state = 101
-                self.functionCall()
-                pass
-
-            elif la_ == 2:
-                localctx = MARParser.TermExpressionContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 102
-                self.term(0)
-                pass
-
-
+            self.state = 101
+            self.term(0)
             self._ctx.stop = self._input.LT(-1)
-            self.state = 121
+            self.state = 119
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,8,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 119
+                    self.state = 117
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
                     if la_ == 1:
                         localctx = MARParser.CompareExpressionContext(self, MARParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 105
+                        self.state = 103
                         if not self.precpred(self._ctx, 2):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                        self.state = 106
+                        self.state = 104
                         self.compareOp()
-                        self.state = 107
+                        self.state = 105
                         self.expression(3)
                         pass
 
                     elif la_ == 2:
                         localctx = MARParser.BoolExpressionContext(self, MARParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 109
+                        self.state = 107
                         if not self.precpred(self._ctx, 1):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 1)")
-                        self.state = 110
+                        self.state = 108
                         self.boolOp()
-                        self.state = 111
+                        self.state = 109
                         self.expression(2)
                         pass
 
                     elif la_ == 3:
                         localctx = MARParser.AddExpressionContext(self, MARParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 113
+                        self.state = 111
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
-                        self.state = 114
+                        self.state = 112
                         self.match(MARParser.ADD)
-                        self.state = 115
+                        self.state = 113
                         self.term(0)
                         pass
 
                     elif la_ == 4:
                         localctx = MARParser.SubExpressionContext(self, MARParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 116
+                        self.state = 114
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 117
+                        self.state = 115
                         self.match(MARParser.SUB)
-                        self.state = 118
+                        self.state = 116
                         self.term(0)
                         pass
 
              
-                self.state = 123
+                self.state = 121
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,8,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1143,8 +1102,8 @@ class MARParser ( Parser ):
 
         def MOD(self):
             return self.getToken(MARParser.MOD, 0)
-        def factor(self):
-            return self.getTypedRuleContext(MARParser.FactorContext,0)
+        def power(self):
+            return self.getTypedRuleContext(MARParser.PowerContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1173,8 +1132,8 @@ class MARParser ( Parser ):
 
         def DIV(self):
             return self.getToken(MARParser.DIV, 0)
-        def factor(self):
-            return self.getTypedRuleContext(MARParser.FactorContext,0)
+        def power(self):
+            return self.getTypedRuleContext(MARParser.PowerContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1203,8 +1162,8 @@ class MARParser ( Parser ):
 
         def MUL(self):
             return self.getToken(MARParser.MUL, 0)
-        def factor(self):
-            return self.getTypedRuleContext(MARParser.FactorContext,0)
+        def power(self):
+            return self.getTypedRuleContext(MARParser.PowerContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1236,63 +1195,63 @@ class MARParser ( Parser ):
             self._ctx = localctx
             _prevctx = localctx
 
-            self.state = 125
+            self.state = 123
             self.power()
             self._ctx.stop = self._input.LT(-1)
-            self.state = 138
+            self.state = 136
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,10,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 136
+                    self.state = 134
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
                     if la_ == 1:
                         localctx = MARParser.MulExpressionContext(self, MARParser.TermContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_term)
-                        self.state = 127
+                        self.state = 125
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 128
+                        self.state = 126
                         self.match(MARParser.MUL)
-                        self.state = 129
-                        self.factor()
+                        self.state = 127
+                        self.power()
                         pass
 
                     elif la_ == 2:
                         localctx = MARParser.DivExpressionContext(self, MARParser.TermContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_term)
-                        self.state = 130
+                        self.state = 128
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 131
+                        self.state = 129
                         self.match(MARParser.DIV)
-                        self.state = 132
-                        self.factor()
+                        self.state = 130
+                        self.power()
                         pass
 
                     elif la_ == 3:
                         localctx = MARParser.ModExpressionContext(self, MARParser.TermContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_term)
-                        self.state = 133
+                        self.state = 131
                         if not self.precpred(self._ctx, 2):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                        self.state = 134
+                        self.state = 132
                         self.match(MARParser.MOD)
-                        self.state = 135
-                        self.factor()
+                        self.state = 133
+                        self.power()
                         pass
 
              
-                self.state = 140
+                self.state = 138
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,10,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1381,24 +1340,24 @@ class MARParser ( Parser ):
         localctx = MARParser.PowerContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_power)
         try:
-            self.state = 146
+            self.state = 144
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
             if la_ == 1:
                 localctx = MARParser.PowerExpressionContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 141
+                self.state = 139
                 self.not_()
-                self.state = 142
+                self.state = 140
                 self.match(MARParser.POW)
-                self.state = 143
+                self.state = 141
                 self.power()
                 pass
 
             elif la_ == 2:
                 localctx = MARParser.NotPowerContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 145
+                self.state = 143
                 self.not_()
                 pass
 
@@ -1487,21 +1446,21 @@ class MARParser ( Parser ):
         localctx = MARParser.NotContext(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_not)
         try:
-            self.state = 151
+            self.state = 149
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [13]:
                 localctx = MARParser.NotExpressionContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 148
+                self.state = 146
                 self.match(MARParser.NOT)
-                self.state = 149
+                self.state = 147
                 self.not_()
                 pass
             elif token in [2, 3, 4, 5, 6, 12, 14]:
                 localctx = MARParser.FactorNotContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 150
+                self.state = 148
                 self.factor()
                 pass
             else:
@@ -1582,6 +1541,31 @@ class MARParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
+    class FunctionCallExpressionContext(FactorContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a MARParser.FactorContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def functionCall(self):
+            return self.getTypedRuleContext(MARParser.FunctionCallContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionCallExpression" ):
+                listener.enterFunctionCallExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionCallExpression" ):
+                listener.exitFunctionCallExpression(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionCallExpression" ):
+                return visitor.visitFunctionCallExpression(self)
+            else:
+                return visitor.visitChildren(self)
+
+
     class ParanthesesExpressionContext(FactorContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a MARParser.FactorContext
@@ -1617,33 +1601,41 @@ class MARParser ( Parser ):
         localctx = MARParser.FactorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_factor)
         try:
-            self.state = 159
+            self.state = 158
             self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [14]:
+            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
+            if la_ == 1:
                 localctx = MARParser.ParanthesesExpressionContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 153
+                self.state = 151
                 self.match(MARParser.OPP)
-                self.state = 154
+                self.state = 152
                 self.expression(0)
-                self.state = 155
+                self.state = 153
                 self.match(MARParser.CLP)
                 pass
-            elif token in [2, 3, 4, 5, 6]:
-                localctx = MARParser.ConstantExpressionContext(self, localctx)
-                self.enterOuterAlt(localctx, 2)
-                self.state = 157
-                self.constant()
-                pass
-            elif token in [12]:
+
+            elif la_ == 2:
                 localctx = MARParser.IdentifierExpressionContext(self, localctx)
-                self.enterOuterAlt(localctx, 3)
-                self.state = 158
+                self.enterOuterAlt(localctx, 2)
+                self.state = 155
                 self.match(MARParser.ID)
                 pass
-            else:
-                raise NoViableAltException(self)
+
+            elif la_ == 3:
+                localctx = MARParser.ConstantExpressionContext(self, localctx)
+                self.enterOuterAlt(localctx, 3)
+                self.state = 156
+                self.constant()
+                pass
+
+            elif la_ == 4:
+                localctx = MARParser.FunctionCallExpressionContext(self, localctx)
+                self.enterOuterAlt(localctx, 4)
+                self.state = 157
+                self.functionCall()
+                pass
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1703,7 +1695,7 @@ class MARParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 161
+            self.state = 160
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 124) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1755,7 +1747,7 @@ class MARParser ( Parser ):
         self.enterRule(localctx, 30, self.RULE_powerOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 163
+            self.state = 162
             self.match(MARParser.POW)
         except RecognitionException as re:
             localctx.exception = re
@@ -1809,7 +1801,7 @@ class MARParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 165
+            self.state = 164
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 46137344) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1865,7 +1857,7 @@ class MARParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 167
+            self.state = 166
             _la = self._input.LA(1)
             if not(_la==20 or _la==21):
                 self._errHandler.recoverInline(self)
@@ -1917,7 +1909,7 @@ class MARParser ( Parser ):
         self.enterRule(localctx, 36, self.RULE_compareOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 169
+            self.state = 168
             self.match(MARParser.RELOP)
         except RecognitionException as re:
             localctx.exception = re
@@ -1964,7 +1956,7 @@ class MARParser ( Parser ):
         self.enterRule(localctx, 38, self.RULE_boolOp)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 171
+            self.state = 170
             self.match(MARParser.BOOL_OP)
         except RecognitionException as re:
             localctx.exception = re
@@ -2022,19 +2014,19 @@ class MARParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 173
+            self.state = 172
             self.match(MARParser.OPCB)
-            self.state = 177
+            self.state = 176
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 5248) != 0):
-                self.state = 174
+                self.state = 173
                 self.line()
-                self.state = 179
+                self.state = 178
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 180
+            self.state = 179
             self.match(MARParser.CLCB)
         except RecognitionException as re:
             localctx.exception = re

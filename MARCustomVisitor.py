@@ -113,17 +113,17 @@ class MARCustomVisitor(MARVisitor):
 
     def visitMulExpression(self, ctx:MARParser.MulExpressionContext):
         leftExp = self.visit(ctx.term())
-        rightExp = self.visit(ctx.factor())
+        rightExp = self.visit(ctx.power())
         return self.__multy(leftExp, rightExp)
 
     def visitDivExpression(self, ctx:MARParser.DivExpressionContext):
         leftExp = self.visit(ctx.term())
-        rightExp = self.visit(ctx.factor())
+        rightExp = self.visit(ctx.power())
         return self.__divied(leftExp, rightExp)
 
     def visitModExpression(self, ctx:MARParser.ModExpressionContext):
         leftExp = self.visit(ctx.term())
-        rightExp = self.visit(ctx.factor())
+        rightExp = self.visit(ctx.power())
         return self.__modify(leftExp, rightExp)
 
     def __multy(self, left, right):
@@ -258,7 +258,7 @@ class MARCustomVisitor(MARVisitor):
         if op == '<':
             return self.__Smaller(leftExp, rightExp)
         elif op == '>':
-            return self.__Bigger(leftExp, rightExp)
+            return self.__Greater(leftExp, rightExp)
         elif op == '<=':
             return self.__SmallerEquals(leftExp, rightExp)
         elif op == '>=':
@@ -285,7 +285,7 @@ class MARCustomVisitor(MARVisitor):
         else:
             raise Exception(f'you can not compare {type(left)} and {type(right)} value types')
 
-    def __Bigger(self, left, right):
+    def __Greater(self, left, right):
         if type(left) is int and type(right) is int:
             return left > right
 

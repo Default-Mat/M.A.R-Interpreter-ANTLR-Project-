@@ -21,3 +21,7 @@ def show(string):
 
     print(string)
 
+
+def to_string(nonstring):
+    return str(nonstring)
+

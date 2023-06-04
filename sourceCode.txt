@@ -1,0 +1,11 @@
+a = 5;
+j = 3;
+while a > 3 or j == 3{
+    if a == 5{show("a is 5");}
+    else if a == 4{
+        show("a is 4");
+        j = j - 1;
+    }
+    else {show("a is lower than 4");}
+    a = a - 1;
+}
