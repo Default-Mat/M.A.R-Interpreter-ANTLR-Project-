@@ -9,3 +9,5 @@ while a > 3 or j == 3{
     else {show("a is lower than 4");}
     a = a - 1;
 }
+
+show(true or false);

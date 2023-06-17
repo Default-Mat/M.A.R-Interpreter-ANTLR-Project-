@@ -1,18 +1,10 @@
 import preset_functions
 from Generated_files.MARVisitor import MARVisitor
 from Generated_files.MARParser import MARParser
-from antlr4 import *
 
 
 class MARCustomVisitor(MARVisitor):
     variables = {}
-
-    def __init__(self):
-        self.should_break = False
-        self.should_continue = False
-        self.is_within_block = False
-        self.variables["pi"] = 3.14
-        self.variables["amirreza"] = 0
 
     def visitFunctionCall(self, ctx: MARParser.FunctionCallExpressionContext):
         identify = ctx.ID().getText()
@@ -204,7 +196,7 @@ class MARCustomVisitor(MARVisitor):
     def visitParanthesesExpression(self, ctx:MARParser.ParanthesesExpressionContext):
         return self.visit(ctx.expression())
 
-    def visitBoolExpression(self, ctx: MARParser.AddExpressionContext):
+    def visitBoolExpression(self, ctx: MARParser.BoolExpressionContext):
         leftExp = self.visit(ctx.expression(0))
         rightExp = self.visit(ctx.expression(1))
         op = ctx.boolOp().getText()
@@ -231,7 +223,7 @@ class MARCustomVisitor(MARVisitor):
         elif type(left) is bool and type(right) is bool:
             return left and right
         else:
-            raise Exception(f'can not in and')
+            raise Exception(f'can not "and" {type(left)} and {type(right)}')
 
     def __or(self, left, right):
         if type(left) is int and type(right) is int:
@@ -248,9 +240,9 @@ class MARCustomVisitor(MARVisitor):
         elif type(left) is bool and type(right) is bool:
             return left or right
         else:
-            raise Exception(f'can not in or')
+            raise Exception(f'can not "or" {type(left)} and {type(right)}')
 
-    def visitCompareExpression(self, ctx: MARParser.AddExpressionContext):
+    def visitCompareExpression(self, ctx: MARParser.CompareExpressionContext):
         leftExp = self.visit(ctx.expression(0))
         rightExp = self.visit(ctx.expression(1))
         op = ctx.compareOp().getText()
@@ -365,7 +357,7 @@ class MARCustomVisitor(MARVisitor):
         else:
             raise Exception(f'you can not compare {type(left)} and {type(right)} value types')
 
-    def visitIfBlock(self, ctx):
+    def visitIfBlock(self, ctx: MARParser.IfBlockContext):
         conditionResult = self.visit(ctx.expression())
         evaluatedBlock = False
 
@@ -386,7 +378,7 @@ class MARCustomVisitor(MARVisitor):
 
         return None
 
-    def visitElseIfBlock(self, ctx):
+    def visitElseIfBlock(self, ctx: MARParser.ElseIfBlockContext):
         conditionResult = self.visit(ctx.expression())
         evaluatedBlock = False
 
@@ -407,7 +399,7 @@ class MARCustomVisitor(MARVisitor):
 
         return True if evaluatedBlock else False
 
-    def visitElseBlock(self, ctx):
+    def visitElseBlock(self, ctx: MARParser.ElseBlockContext):
         self.visit(ctx.block())
         return True
 
